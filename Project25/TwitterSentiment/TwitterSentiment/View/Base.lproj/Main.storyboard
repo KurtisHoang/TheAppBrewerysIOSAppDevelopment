@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TwitterSentiment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yZ-o3-IMh" userLabel="Background View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="rEk-t9-hhw">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="876"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgq-TD-XUh">
+                                                <rect key="frame" x="153" y="0.0" width="108" height="666"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How do people feel about..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2G4-VD-Z2X">
+                                                <rect key="frame" x="0.0" y="721" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="XPZ-K3-rZV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aX2-Dr-kif">
+                                                <rect key="frame" x="161.5" y="826" width="91" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="MXT-AX-4PL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="Predict">
+                                                    <color key="titleColor" red="0.10588235294117647" green="0.66666666666666663" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="predictButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BDG-h8-8mo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="2G4-VD-Z2X" secondAttribute="trailing" id="hzN-pD-XoF"/>
+                                            <constraint firstItem="2G4-VD-Z2X" firstAttribute="leading" secondItem="rEk-t9-hhw" secondAttribute="leading" id="xBv-gD-acL"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.42487171289999998" green="0.99222499129999997" blue="0.83748251200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rEk-t9-hhw" secondAttribute="bottom" constant="20" id="EJ2-OA-YgB"/>
+                                    <constraint firstAttribute="trailing" secondItem="rEk-t9-hhw" secondAttribute="trailing" id="H6o-k6-iCx"/>
+                                    <constraint firstItem="rEk-t9-hhw" firstAttribute="top" secondItem="2yZ-o3-IMh" secondAttribute="top" id="Ywf-GM-x3a"/>
+                                    <constraint firstItem="rEk-t9-hhw" firstAttribute="leading" secondItem="2yZ-o3-IMh" secondAttribute="leading" id="kyZ-ne-05r"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2yZ-o3-IMh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4c6-kV-HMD"/>
+                            <constraint firstItem="2yZ-o3-IMh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MtI-UH-hxZ"/>
+                            <constraint firstAttribute="bottom" secondItem="2yZ-o3-IMh" secondAttribute="bottom" id="Y5l-7m-x70"/>
+                            <constraint firstItem="2yZ-o3-IMh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wx9-gS-sga"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="2yZ-o3-IMh" id="kF8-8C-zBX"/>
+                        <outlet property="sentimentLabel" destination="bgq-TD-XUh" id="F32-F1-9SI"/>
+                        <outlet property="textField" destination="2G4-VD-Z2X" id="Qry-EH-KO3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
