@@ -1,0 +1,14 @@
+
+platform :ios, '13.0'
+
+target 'ThunderChat' do
+  use_frameworks!
+
+  # Pods for ThunderChat
+  # pod 'CLTypingLabel', '~> 0.4.0' #TypingAnimation
+  
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'IQKeyboardManagerSwift'
+
+end
