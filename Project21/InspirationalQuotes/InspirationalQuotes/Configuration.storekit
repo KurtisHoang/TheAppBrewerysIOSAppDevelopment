@@ -1,0 +1,33 @@
+{
+  "identifier" : "B59C00EC",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "A841511E",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.kurtishoang.premiumquotes",
+      "referenceName" : "PremiumQuotes",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_billingIssuesEnabled" : false
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 1
+  }
+}
