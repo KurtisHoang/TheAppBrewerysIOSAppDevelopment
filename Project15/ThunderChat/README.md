@@ -4,7 +4,7 @@
 1. [Description](#Description)
 2. [How to Run](#How-to-Run)
 3. [Topic Learned](#Topics-Learned)
-3. [Walkthrough](#Walkthrough)
+4. [Walkthrough](#Walkthrough)
 
 ## Description
 ThunderChat is a project.
