@@ -1,6 +1,0 @@
-framework module Pods_ThunderChat {
-  umbrella header "Pods-ThunderChat-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,35 +1,29 @@
-# ThunderChat
+# ToDoList-Realm
 
 ## Table of Contents
 1. [Description](#Description)
 2. [How to Run](#How-to-Run)
 3. [Topic Learned](#Topics-Learned)
-3. [Walkthrough](#Walkthrough)
+4. [Walkthrough](#Walkthrough)
 
 ## Description
-ThunderChat is a project.
+ToDoList-Realm is a project that reworks ToDoList-PersistingData with Realm instead of using Core Data to create the to do list.
 
 ## How to Run
 1. Go to directory in terminal, type pod install
-2. Register & Sign in to Firebase
-3. Download GoogleService-Info.plist
-4. Add GoogleService-Info.plist to project
-5. Run the app
 
 ## Topics Learned
 1. Model-View-Controller (MVC)
-2. programmically change UI elements
-3. Structs & Classes
-4. Object Oriented Programming
-5. Firebase as a cloud database, user authentication
-6. Cocoapods
-7. Navigation Controller
-8. Custom UI with .xib files
+2. Realm
+4. SearchBar
+5. NSPredicate
+6. TableView SwipeAction
+
 
 ## Walkthrough
 
 Portrait
-![](Documentation/ThunderChat.gif) 
+![](Documentation/ToDoList-Realm.gif) 
 
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
