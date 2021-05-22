@@ -11,6 +11,9 @@ WhatFlower is a project that uses Machine Learning to determine what type of flo
 
 ## How to Run
 1. Go to directory in terminal, type pod install
+2. Download the FlowerClassifier mlmodel from [FlowerClassifer](https://drive.google.com/uc?export=download&id=13v58uJqi_pAXKoBa2J7mZ7sLkaSRVUBb)
+3. Place it in the WhatFlower directory
+4. Run the App
 
 ## Topics Learned
 1. CoreML
